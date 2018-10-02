@@ -1,0 +1,28 @@
+import turtle
+
+alex = turtle.Turtle()
+
+alex.shape('turtle')    # values can be 'turtle', 'arrow', 'circle'
+                        # 'square', 'triangle', or 'classic'
+
+alex.forward(150)
+alex.left(90)
+alex.forward(150)
+alex.left(90)
+alex.forward(150)
+alex.left(90)
+alex.forward(150)
+
+alex.penup()
+alex.goto(-50, -50)
+alex.color('blue')
+alex.pensize(1)
+alex.pendown()
+
+alex.begin_fill()
+
+for i in range(4):
+    alex.forward(250)
+    alex.left(90)
+
+alex.end_fill()
